@@ -24,6 +24,3 @@ As previously mentioned, you need a basic familiarity with the C++ language and 
 * [C++ 17 Game Development Projects](https://www.packtpub.com/game-development/c-17-game-development-projects?utm_source=github&utm_medium=repository&utm_campaign=9781788834087)
 
 * [C++ Reactive Programming](https://www.packtpub.com/application-development/c-reactive-programming?utm_source=github&utm_medium=repository&utm_campaign=9781788629775)
-
-### Suggestions and Feedback
-[Click here](https://docs.google.com/forms/d/e/1FAIpQLSe5qwunkGf6PUvzPirPDtuy1Du5Rlzew23UBp2S-P3wB-GcwQ/viewform) if you have any feedback or suggestions.
