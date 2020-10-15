@@ -3,8 +3,8 @@ using namespace std;
 
 int main()
 {
-   unsigned int limit = 0;
-   cout << "Upper limit:";
+   unsigned int limit;
+   cout << "Upper limit: ";
    cin >> limit;
 
    unsigned long long sum = 0;
@@ -14,5 +14,6 @@ int main()
          sum += i;
    }
 
-   cout << "sum=" << sum << std::endl;
+   cout << "sum=" << sum << endl;
+   return 0;
 }
