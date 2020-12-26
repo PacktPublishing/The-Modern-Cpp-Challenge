@@ -23,6 +23,17 @@ int main()
 
 As previously mentioned, you need a basic familiarity with the C++ language and the standard library in order to be able to utilize this book, or you can learn that along the way. In any case, this book will teach you how to solve problems, but it will not teach you about the language and features utilized in the solutions. You will need a compiler with C++17 support; a complete list of required libraries as well as possible compilers you can use can be found in the Software Hardware List available in the code bundle. In the following sections, you will find detailed instructions for downloading and building the code from this book.
 
+## Errata
+The correct implemntation for the postfix operator++ is as follows:
+```
+ipv4 operator++(int)
+{
+   ipv4 result(*this);
+   ++(*this);
+   return result;
+}
+```
+
 ## Related Products
 * [Hands-On Embedded Programming with C++17](https://www.packtpub.com/application-development/hands-embedded-programming-c17?utm_source=github&utm_medium=repository&utm_campaign=9781788629300)
 
