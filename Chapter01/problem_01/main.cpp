@@ -1,10 +1,11 @@
 #include <iostream>
+using namespace std;
 
 int main()
 {
-   unsigned int limit = 0;
-   std::cout << "Upper limit:";
-   std::cin >> limit;
+   unsigned int limit;
+   cout << "Upper limit: ";
+   cin >> limit;
 
    unsigned long long sum = 0;
    for (unsigned int i = 3; i < limit; ++i)
@@ -13,5 +14,6 @@ int main()
          sum += i;
    }
 
-   std::cout << "sum=" << sum << std::endl;
+   cout << "sum=" << sum << endl;
+   return 0;
 }
