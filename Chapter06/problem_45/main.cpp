@@ -31,8 +31,8 @@ public:
 
    void swap(priority_queue& other) noexcept
    {
-      swap(data, other.data);
-      swap(comparer, other.comparer);
+      std::swap(data, other.data);
+      std::swap(comparer, other.comparer);
    }
 
 private:
@@ -50,18 +50,26 @@ void swap(
 
 int main()
 {
-   priority_queue<int> q;
-   for (int i : {1, 5, 3, 1, 13, 21, 8})
-   {
-      q.push(i);
-   }
+    priority_queue<int> q;
+    for (int i: {1, 5, 3, 1, 13, 21, 8}) {
+        q.push(i);
+    }
 
-   assert(!q.empty());
-   assert(q.size() == 7);
+    priority_queue<int> q1;
+    for (int i: {11, 52, 31, 1, 123, 21, 8}) {
+        q1.push(i);
+    }
 
-   while (!q.empty())
-   {
-      std::cout << q.top() << ' ';
-      q.pop();
-   }
+    assert(!q.empty());
+    assert(q.size() == 7);
+    swap(q,q1);
+    while (!q.empty()) {
+        std::cout << q.top() << ' ';
+        q.pop();
+    }
+    std::cout << std::endl;
+    while (!q1.empty()) {
+        std::cout << q1.top() << ' ';
+        q1.pop();
+    }
 }
