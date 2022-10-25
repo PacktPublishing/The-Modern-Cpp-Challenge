@@ -41,3 +41,7 @@ ipv4 operator++(int)
 * [C++ 17 Game Development Projects](https://www.packtpub.com/game-development/c-17-game-development-projects?utm_source=github&utm_medium=repository&utm_campaign=9781788834087)
 
 * [C++ Reactive Programming](https://www.packtpub.com/application-development/c-reactive-programming?utm_source=github&utm_medium=repository&utm_campaign=9781788629775)
+### Download a free PDF
+
+ <i>If you have already purchased a print or Kindle version of this book, you can get a DRM-free PDF version at no cost.<br>Simply click on the link to claim your free PDF.</i>
+<p align="center"> <a href="https://packt.link/free-ebook/9781789535426">https://packt.link/free-ebook/9781789535426 </a> </p>
