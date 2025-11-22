@@ -9,6 +9,7 @@
 #include <queue>
 #include <string>
 #include <array>
+#include <algorithm>
 
 class logger
 {
