@@ -9,6 +9,7 @@
 #include <queue>
 #include <string>
 #include <array>
+#include <algorithm>
 
 class logger
 {
@@ -123,17 +124,22 @@ int main()
       std::seed_seq seq(std::begin(seed_data), std::end(seed_data));
       std::mt19937 eng(seq);
       std::uniform_int_distribution<> ud(200, 500);
-      
+
       for (int i = 1; i <= 25; ++i)
       {
          customer c(tm.next());
-         customers.push(c);
+         std::size_t csz;
+         {
+            std::lock_guard lk(mt);
+            customers.push(c);
+            csz = customers.size();
+         }
          
          logger::instance().log("[+] new customer with ticket " + std::to_string(c.ticket_number()));
-         logger::instance().log("[=] queue size: " + std::to_string(customers.size()));
+         logger::instance().log("[=] queue size: " + std::to_string(csz));
          
          cv.notify_one();
-         
+
          std::this_thread::sleep_for(std::chrono::milliseconds(ud(eng)));
       }
       
